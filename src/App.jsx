@@ -3,19 +3,22 @@ import Home from "./pages/Home";
 import Favorites from "./components/Favorites";
 import HotelDeals from "./pages/HotelDeals";
 import SearchResults from "./pages/SearchResults";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
 
-        <Route path="/" element={<Home />} /> 
+        <Route path="/" element={<Home />} />
         <Route path="/hotel-deals" element={<HotelDeals />} />
-        
-        <Route path="/favorites" element={<Favorites />} />
-      <Route path ="/search" element={<SearchResults />} />
 
-</Routes>
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/search" element={<SearchResults />} />
+
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+      </Routes>
     </BrowserRouter>
   );
 }
